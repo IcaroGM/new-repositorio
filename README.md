@@ -1,39 +1,78 @@
-# 🧠 Projeto Faculdade - Backend
+## 2º entrega do Projeto Integrador Grupo 26 
 
-Backend desenvolvido em **Node.js + Express + Sequelize + MySQL**.  
-Responsável por lidar com autenticação, conexão ao banco e comunicação com o frontend.
+Este projeto tem por objetivo atender as demandas do quarto semestre da disciplina de Projeto Integrador: Desenvolvimento de sistemas orientado a Dispositivos Móveis e Baseados na Web 
+
+
+## Integrantes do grupo e suas equipes:
+### Projeto de Banco de Dados
+- DANIEL DE OLIVEIRA SOLANO LOPES
+
+### Projeto de Back End
+- EDUARDO AUGUSTO DA SILVA ROSA
+- HENRIQUE BARREIRO SANTANA
+- VINICIUS PEREIRA DE SOUZA 
+
+### Projeto de Front End
+- ICARO GOES MOREIRA
+- MARCELLY CERDEIRINHA MARCIOTO
+- MIRIAM VIEGAS DE JESUS
+
+### Integração dos projetos
+- HENRIQUE BARREIRO SANTANA
+- VINICIUS PEREIRA DE SOUZA
+- MIRIAM VIEGAS DE JESUS
+
+## Apresentação do projeto
+
+- O projeto consiste em um sistema integrado para atender um sistema de gestão voltado a pet shops de pequeno porte, com o objetivo de centralizar informações, otimizar processos internos e fortalecer o relacionamento com clientes por meio de ferramentas de comunicação automatizadas.
+- Este projeto inicialmente consistiu em um sistema que contemplará funcionalidades de cadastro de clientes, fornecedores, funcionários e pets, além de módulos para controle de estoque, compras, vendas e agendamentos de serviços, integrados a lembretes automáticos via WhatsApp. O sistema busca reduzir erros manuais, aumentar a eficiência operacional e fornecer relatórios gerenciais que apoiem a tomada de decisões estratégicas. 
+  
+### Revisita ao projeto
+- Dadas as limitações de tempo para a realização do projeto, o desenvolvimento da parte de integração entre os sistema desenvolvido e o serviço de comunicação WhatsApp foi removida, de maneira que o projeto não possui os sistemas de comunicação ou de agendamento de serviços que inicialmente foram levantados.
 
 ---
-
 ## ⚙️ Tecnologias utilizadas
+### Back End
+- Node.js + Express, para criação do ambiente de execução e framework web para criação da API.
+- TypeScript, foi a Linguagem principal para código.
 
-- [Node.js](https://nodejs.org/)
-- [Express](https://expressjs.com/)
-- [Sequelize (ORM)](https://sequelize.org/)
-- [MySQL](https://www.mysql.com/)
-- [dotenv](https://www.npmjs.com/package/dotenv)
-- [cookie-parser](https://www.npmjs.com/package/cookie-parser)
-- [jose](https://www.npmjs.com/package/jose) (para JWT)
+### Banco de Dados
+- PostgreSQL, foi utilizado para o Banco de dados relacional.
 
----
+### Front End
+- Foram utilizadas HTML, CSS e JavaScrip.
 
-## 📦 Estrutura do projeto
+
+
+📦 Estrutura do projeto
 
 ```
-src/
-├── config/
-│ └── database.js # Conexão com o banco via Sequelize
+new-repositorio/
+├── assets/
+│   ├── css/        # Contém os arquivos CSS do projeto
+│   ├── img/        # Contém as imagens utilizadas no projeto
+│   └── js/         # Contém os arquivos JavaScript do projeto
 │
-├── controllers/ # Lógica das rotas
-├── models/ # Modelos das tabelas
-├── routes/ # Rotas da API
-│ └── index.js
+├── back-end/
+│   ├── .vs/        # Contém os arquivos de cache do banco de dados e utiliza Node.js
+│   ├── js/         # Contém os arquivos JavaScript do projeto
+│   └── src/        # Contém os arquivos do backend
 │
-├── app.js # Configuração do Express
-└── server.js # Inicialização do servidor
+├── .cadastro_cliente/
+│   ├── clientes.html                # Página de Clientes
+│   └── cadastro_cliente.html        # Página de cadastro de clientes
+│
+├── produtos/
+│   ├── produtos.html                # Página de Produtos
+│   ├── cadastro_produtos.html       # Cadastro para alimentar a tabela de produtos
+│   ├── editar_produto.html          # Edição de produtos cadastrados
+│   ├── editar_categoria_grupos.html # Edição da categoria de grupos
+│   └── editar_categoria_setores.html# Edição da categoria de setores
+│
+├── header.html        # Menu principal utilizado pelas páginas
+├── index.html         # Página principal do projeto
+└── telainicial.html   # Página de apresentação do projeto
 ```
-
----
 
 ## 🧩 Pré-requisitos
 
